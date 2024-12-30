@@ -40,12 +40,15 @@ The shell for day 1 is already there. These are the steps to add day 2, etc. For
 
 ## Other ways to run the app
 
-### VSCode
+[//]: # (### VSCode)
 
-If you are using VSCode, this project comes with a launch template that will prompt you for arguments. Enter just the day (to run part 1) or the day and part to run part 2.
+[//]: # ()
+[//]: # (If you are using VSCode, this project comes with a launch template that will prompt you for arguments. Enter just the day &#40;to run part 1&#41; or the day and part to run part 2.)
 
-- If you want to run Day 3 part 1, just type `3`
-- If you want to run Day 4 part 2, type `4 2`
+[//]: # ()
+[//]: # (- If you want to run Day 3 part 1, just type `3`)
+
+[//]: # (- If you want to run Day 4 part 2, type `4 2`)
 
 ### Per-day main method
 
