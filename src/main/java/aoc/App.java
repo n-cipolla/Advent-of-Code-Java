@@ -149,14 +149,13 @@ public class App {
             System.out.println("No file " + fileName + " on the classpath.");
             return Optional.empty();
         }
-        Path path = Paths.get(url.getFile());
-        if (!Files.exists(path)) {
-            return Optional.empty();
-        }
-
         try {
+            Path path = Paths.get(url.toURI());
+            if (!Files.exists(path)) {
+                return Optional.empty();
+            }
             return Optional.of(Files.readString(path));
-        } catch (IOException e) {
+        } catch (URISyntaxException | IOException e) {
             e.printStackTrace();
             return Optional.empty();
         }

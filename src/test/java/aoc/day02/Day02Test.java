@@ -1,4 +1,4 @@
-package aoc.day01;
+package aoc.day02;
 
 
 import org.junit.jupiter.api.Test;
@@ -8,23 +8,18 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class Day01Test {
+public class Day02Test {
 
     @Test
     public void testPart1(){
         // Given
-        String input = "3   4\n" +
-                "4   3\n" +
-                "2   5\n" +
-                "1   3\n" +
-                "3   9\n" +
-                "3   3";
+        String input = "test";
 
         // When
-        String result = new Day01().part1(input);
+        String result = new Day02().part1(input);
 
         // Then
-        assertEquals(String.valueOf(31), result);
+        assertEquals(input, result);
     }
 
     @Test
@@ -33,7 +28,7 @@ public class Day01Test {
         String input = "test";
 
         // When
-        String result = new Day01().part2(input);
+        String result = new Day02().part2(input);
 
         // Then
         assertEquals(input, result);
